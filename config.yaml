@@ -1,0 +1,55 @@
+# Smart Recycling Bin Classifier Configuration
+
+# Categories for waste classification
+categories:
+  - Plastic
+  - Metal
+  - Paper
+  - Cardboard
+  - Glass
+
+# Bin configuration
+bins:
+  Plastic:
+    bin_number: 1
+    color: "blue"
+    emoji: "🔵"
+  Metal:
+    bin_number: 2
+    color: "yellow"
+    emoji: "🟡"
+  Paper:
+    bin_number: 3
+    color: "green"
+    emoji: "🟢"
+  Glass:
+    bin_number: 4
+    color: "brown"
+    emoji: "🟤"
+  Cardboard:
+    bin_number: 5
+    color: "gold"
+    emoji: "📦"
+
+# Image processing parameters
+image_processing:
+  target_size: [224, 224]
+  canny_threshold1: 100
+  canny_threshold2: 200
+  morphology_kernel_size: 5
+  kmeans_clusters: 3
+  kmeans_iterations: 10
+
+# Model parameters
+model:
+  model_path: "data/trained_model.pkl"
+  feature_scaler_path: "data/scaler.pkl"
+  classifier_type: "random_forest"  # Options: svm, random_forest, knn
+
+# Application settings
+app:
+  max_upload_size_mb: 10
+  supported_formats: [".jpg", ".jpeg", ".png", ".bmp", ".tiff"]
+  confidence_threshold: 0.60
+  show_processing_steps: true
+  enable_history: true
