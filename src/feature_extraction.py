@@ -1,5 +1,8 @@
 """Feature extraction for classification."""
-
+# Author: Samarth Sanjay Jadhav
+# GitHub: https://github.com/Samarth-Sanjay-Jadhav
+# Course: Computer Vision
+# Project: Smart Recycling Bin Classifier
 import cv2
 import numpy as np
 from typing import List

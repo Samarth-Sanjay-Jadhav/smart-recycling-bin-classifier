@@ -1,5 +1,8 @@
 """Main Streamlit application for Smart Recycling Bin Classifier."""
-
+# Author: Samarth Sanjay Jadhav
+# GitHub: https://github.com/Samarth-Sanjay-Jadhav
+# Course: Computer Vision
+# Project: Smart Recycling Bin Classifier
 import streamlit as st
 import cv2
 import numpy as np

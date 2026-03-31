@@ -1,5 +1,8 @@
 """Script to download TrashNet dataset."""
-
+# Author: Samarth Sanjay Jadhav
+# GitHub: https://github.com/Samarth-Sanjay-Jadhav
+# Course: Computer Vision
+# Project: Smart Recycling Bin Classifier
 import os
 import sys
 from pathlib import Path
